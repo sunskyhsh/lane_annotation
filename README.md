@@ -55,16 +55,20 @@ labelme --nodata --autosave
 标注界面打开后，可以点击“Open”打开单幅图像进行标注，也可以点击“Open Dir”打开图像文件夹。
 标注模式有多种，可以标注出多边形、矩形、圆形、线段等。标注车道线一般使用多边形模式或者线模式。
 
-####　线段模式
+#### 线段模式
+
 在打开的图片上右键，点击“Create Line”，然后在图片上点击车道线的两个端点，再给标签命名。
 
-![标注线段](labelme-line.png)
+![标注线段](labelme-line.jpg)
 
 #### 多边形模式
+
 点击“Create Polygons”，然后在图片上画出包围车道线的多边形。
-![标注多边形](labelme-polygon.png)
+
+![标注多边形](labelme-polygon.jpg)
 
 #### 标注结果
+
 标注结果为json文件，其中关键参数为"imageWidth"、"imageHeight"、"imagePath"和"shapes"。
 "shapes"是标注的线段、多边形等形状的位置。
 
