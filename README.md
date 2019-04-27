@@ -57,11 +57,12 @@ labelme --nodata --autosave
 
 ####　线段模式
 在打开的图片上右键，点击“Create Line”，然后在图片上点击车道线的两个端点，再给标签命名。
-![标注线段][labelme-line.png]
+
+![标注线段](labelme-line.png)
 
 #### 多边形模式
 点击“Create Polygons”，然后在图片上画出包围车道线的多边形。
-![标注多边形][labelme-polygon.png]
+![标注多边形](labelme-polygon.png)
 
 #### 标注结果
 标注结果为json文件，其中关键参数为"imageWidth"、"imageHeight"、"imagePath"和"shapes"。
@@ -95,7 +96,9 @@ python labelme_2_tusimple_lane.py [标注结果所在路径] [-o 输出路径（
 ```
 脚本会在输出路径下创建gt_image_binary和gt_image_instance目录，并在其中生成二指图像和灰度图像。
 对于线段模式标注的车道线，得到的二值图像为：
-![线段模式标注得到的二值图像][line.png]
+
+![线段模式标注得到的二值图像](line.png)
 
 对于多边形模式标注的车道线，得到的二值图像为：
-![多边形模式标注得到的二值图像][polygon.png]
+
+![多边形模式标注得到的二值图像](polygon.png)
